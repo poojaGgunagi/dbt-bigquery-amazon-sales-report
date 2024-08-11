@@ -1,3 +1,11 @@
+### Steps Taken into Consideration
+
+I have used # Google Bigquery # as my source and all data stored in it. I used DBT to connect to Google Bigquery and performed the following transformations in DBT.
+1. Cleaning of data.2. Create a Fact and Dimension table using the Start schema.3. Connected big query to PowerBI and created a data modeling diagram and created 2 sample visualizations using powerbi.
+
+
+
+
 ## Visualization using PBI for sample questions mentioned in the usecase
 # 1. What is the sales trend for different seasons?  
 <img width="1004" alt="image" src="https://github.com/user-attachments/assets/00fe6546-fbc6-4fff-b359-68a1e1290945">
