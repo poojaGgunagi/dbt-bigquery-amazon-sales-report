@@ -1,15 +1,13 @@
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+## Visualization using PBI for sample questions mentioned in the usecase
+# 1. What is the sales trend for different seasons?  
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/00fe6546-fbc6-4fff-b359-68a1e1290945">
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+
+
+
+
+
+# 2. Which product styles and categories are the most popular in the city of Mumbai? 
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/e0860f21-2d8e-481b-94ad-d82de8888179">
