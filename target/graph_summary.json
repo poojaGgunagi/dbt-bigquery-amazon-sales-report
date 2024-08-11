@@ -1,0 +1,1 @@
+{"_invocation_id": "e2d9beb8-7145-4733-abb6-d578016c1440", "linked": {"0": {"name": "model.demo.my_first_dbt_model", "type": "model", "succ": [1]}, "1": {"name": "model.demo.my_second_dbt_model", "type": "model"}, "2": {"name": "seed.demo.Amazon Sale Report", "type": "seed"}}}

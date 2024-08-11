@@ -1,0 +1,582 @@
+[0m20:47:37.581749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B5DFCB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B5E7875D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B57559F90>]}
+
+
+============================== 20:47:37.590554 | 7e8876bc-5c3d-4153-90dd-186ea27acaab ==============================
+[0m20:47:37.590554 [info ] [MainThread]: Running with dbt=1.7.2
+[0m20:47:37.592809 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "'.'", 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': "dbt debug --profiles-dir='.'", 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:47:37.592809 [info ] [MainThread]: dbt version: 1.7.2
+[0m20:47:37.592809 [info ] [MainThread]: python version: 3.11.5
+[0m20:47:37.595819 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m20:47:37.595819 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:47:37.595819 [info ] [MainThread]: Using profiles dir at '.'
+[0m20:47:37.595819 [info ] [MainThread]: Using profiles.yml file at '.'\profiles.yml
+[0m20:47:37.595819 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m20:47:37.785046 [info ] [MainThread]: Configuration:
+[0m20:47:37.785046 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m20:47:37.785046 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:47:37.793258 [info ] [MainThread]: Required dependencies:
+[0m20:47:37.794217 [debug] [MainThread]: Executing "git --help"
+[0m20:47:37.893425 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:47:37.893425 [debug] [MainThread]: STDERR: "b''"
+[0m20:47:37.893425 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:47:37.893425 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m20:47:37.893425 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:47:37.893425 [info ] [MainThread]: dbt looked for a profiles.yml file in '.'\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:47:37.900966 [debug] [MainThread]: Command `dbt debug` failed at 20:47:37.900966 after 0.35 seconds
+[0m20:47:37.900966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B5E073410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B5753FA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B5753D450>]}
+[0m20:47:37.900966 [debug] [MainThread]: Flushing usage events
+[0m21:05:32.157427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728C1E5C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728D9A1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728C1D25D0>]}
+
+
+============================== 21:05:32.164030 | f2bcb4ad-3cb8-4cd7-aa7e-8f7c2c3d3a2a ==============================
+[0m21:05:32.164030 [info ] [MainThread]: Running with dbt=1.7.2
+[0m21:05:32.168681 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:05:32.170198 [info ] [MainThread]: dbt version: 1.7.2
+[0m21:05:32.170939 [info ] [MainThread]: python version: 3.11.5
+[0m21:05:32.172302 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m21:05:32.172302 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m21:05:32.850427 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m21:05:32.854761 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m21:05:32.854761 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m21:05:32.854761 [info ] [MainThread]: adapter type: sqlserver
+[0m21:05:32.854761 [info ] [MainThread]: adapter version: 1.7.4
+[0m21:05:33.012250 [info ] [MainThread]: Configuration:
+[0m21:05:33.012250 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:05:33.020459 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:05:33.022214 [info ] [MainThread]: Required dependencies:
+[0m21:05:33.023221 [debug] [MainThread]: Executing "git --help"
+[0m21:05:33.103001 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:05:33.103001 [debug] [MainThread]: STDERR: "b''"
+[0m21:05:33.103001 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:05:33.103001 [info ] [MainThread]: Connection:
+[0m21:05:33.103001 [info ] [MainThread]:   server: poojaserver
+[0m21:05:33.103001 [info ] [MainThread]:   database: poojadatabase
+[0m21:05:33.103001 [info ] [MainThread]:   schema: casestudy
+[0m21:05:33.103001 [info ] [MainThread]:   UID: poojadmin
+[0m21:05:33.103001 [info ] [MainThread]:   client_id: None
+[0m21:05:33.103001 [info ] [MainThread]:   authentication: sql
+[0m21:05:33.103001 [info ] [MainThread]:   encrypt: True
+[0m21:05:33.111458 [info ] [MainThread]:   trust_cert: True
+[0m21:05:33.111458 [info ] [MainThread]:   retries: 1
+[0m21:05:33.111458 [info ] [MainThread]:   login_timeout: 0
+[0m21:05:33.113571 [info ] [MainThread]:   query_timeout: 0
+[0m21:05:33.114608 [info ] [MainThread]:   port: 1433
+[0m21:05:33.114608 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m21:05:33.114608 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m21:05:33.114608 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m21:05:33.120526 [debug] [MainThread]: On debug: select 1 as id
+[0m21:05:33.120922 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:05:33.120922 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojadmin};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;Application Name=dbt-sqlserver/1.7.4
+[0m21:05:49.254255 [debug] [MainThread]: SQLServer adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+[0m21:05:50.257228 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojadmin};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;Application Name=dbt-sqlserver/1.7.4
+[0m21:06:06.289688 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m21:06:06.289688 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m21:06:06.301722 [debug] [MainThread]: On debug: No close available on handle
+[0m21:06:06.303382 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:06:06.306575 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:06:06.307754 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:06:06.319525 [debug] [MainThread]: Command `dbt debug` failed at 21:06:06.309814 after 34.30 seconds
+[0m21:06:06.334112 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:06:06.334695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728C5F5710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728C1BE810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002728C57E610>]}
+[0m21:06:06.334695 [debug] [MainThread]: Flushing usage events
+[0m22:30:06.386977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1093EF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF0BCB61D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF10923FD0>]}
+
+
+============================== 22:30:06.394978 | 34955f90-1dab-4fdc-8b3f-d3c3ea595c0b ==============================
+[0m22:30:06.394978 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:30:06.402978 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:30:06.402978 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:30:06.402978 [info ] [MainThread]: python version: 3.11.5
+[0m22:30:06.402978 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:30:06.402978 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:30:07.060165 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m22:30:07.060165 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m22:30:07.067696 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m22:30:07.067696 [info ] [MainThread]: adapter type: sqlserver
+[0m22:30:07.067696 [info ] [MainThread]: adapter version: 1.7.4
+[0m22:30:07.222226 [info ] [MainThread]: Configuration:
+[0m22:30:07.222226 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:30:07.228044 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:30:07.228044 [info ] [MainThread]: Required dependencies:
+[0m22:30:07.231125 [debug] [MainThread]: Executing "git --help"
+[0m22:30:07.300813 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:30:07.302355 [debug] [MainThread]: STDERR: "b''"
+[0m22:30:07.302355 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:30:07.302355 [info ] [MainThread]: Connection:
+[0m22:30:07.304861 [info ] [MainThread]:   server: poojaserver
+[0m22:30:07.304861 [info ] [MainThread]:   database: poojadatabase
+[0m22:30:07.306196 [info ] [MainThread]:   schema: case
+[0m22:30:07.307278 [info ] [MainThread]:   UID: poojaadmin
+[0m22:30:07.309003 [info ] [MainThread]:   client_id: None
+[0m22:30:07.309922 [info ] [MainThread]:   authentication: sql
+[0m22:30:07.309922 [info ] [MainThread]:   encrypt: True
+[0m22:30:07.309922 [info ] [MainThread]:   trust_cert: False
+[0m22:30:07.312931 [info ] [MainThread]:   retries: 1
+[0m22:30:07.313689 [info ] [MainThread]:   login_timeout: 0
+[0m22:30:07.313689 [info ] [MainThread]:   query_timeout: 0
+[0m22:30:07.315391 [info ] [MainThread]:   port: 1433
+[0m22:30:07.316264 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:30:07.316264 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m22:30:07.316264 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m22:30:07.316264 [debug] [MainThread]: On debug: select 1 as id
+[0m22:30:07.316264 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:30:07.316264 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:30:23.430017 [debug] [MainThread]: SQLServer adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+[0m22:30:24.434894 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:30:40.452350 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m22:30:40.452350 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m22:30:40.452350 [debug] [MainThread]: On debug: No close available on handle
+[0m22:30:40.459944 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:30:40.459944 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:30:40.459944 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:30:40.466457 [debug] [MainThread]: Command `dbt debug` failed at 22:30:40.466457 after 34.22 seconds
+[0m22:30:40.470552 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:30:40.472233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF0F1F2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF0F15F910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF0F15E210>]}
+[0m22:30:40.474437 [debug] [MainThread]: Flushing usage events
+[0m22:36:40.445551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABB03F3CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABB02FA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABB1B74B10>]}
+
+
+============================== 22:36:40.451761 | ea50a8dd-5791-44ac-b7e3-c54dffc3f80d ==============================
+[0m22:36:40.451761 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:36:40.451761 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:36:40.451761 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:36:40.451761 [info ] [MainThread]: python version: 3.11.5
+[0m22:36:40.458777 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:36:40.458777 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:36:41.033643 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m22:36:41.033643 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m22:36:41.033643 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m22:36:41.033643 [info ] [MainThread]: adapter type: sqlserver
+[0m22:36:41.033643 [info ] [MainThread]: adapter version: 1.7.4
+[0m22:36:41.243106 [info ] [MainThread]: Configuration:
+[0m22:36:41.248733 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:36:41.249997 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:36:41.249997 [info ] [MainThread]: Required dependencies:
+[0m22:36:41.249997 [debug] [MainThread]: Executing "git --help"
+[0m22:36:41.314776 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:36:41.314776 [debug] [MainThread]: STDERR: "b''"
+[0m22:36:41.314776 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:36:41.314776 [info ] [MainThread]: Connection:
+[0m22:36:41.322796 [info ] [MainThread]:   server: poojaserver
+[0m22:36:41.324501 [info ] [MainThread]:   database: poojadatabase
+[0m22:36:41.326828 [info ] [MainThread]:   schema: case
+[0m22:36:41.327375 [info ] [MainThread]:   UID: poojaadmin
+[0m22:36:41.328543 [info ] [MainThread]:   client_id: None
+[0m22:36:41.328543 [info ] [MainThread]:   authentication: sql
+[0m22:36:41.328543 [info ] [MainThread]:   encrypt: True
+[0m22:36:41.331136 [info ] [MainThread]:   trust_cert: False
+[0m22:36:41.331136 [info ] [MainThread]:   retries: 1
+[0m22:36:41.331136 [info ] [MainThread]:   login_timeout: 0
+[0m22:36:41.331136 [info ] [MainThread]:   query_timeout: 0
+[0m22:36:41.331136 [info ] [MainThread]:   port: 1433
+[0m22:36:41.331136 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:36:41.331136 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m22:36:41.331136 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m22:36:41.331136 [debug] [MainThread]: On debug: select 1 as id
+[0m22:36:41.331136 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:36:41.331136 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:36:57.430942 [debug] [MainThread]: SQLServer adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+[0m22:36:58.434486 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:37:14.437318 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m22:37:14.442529 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m22:37:14.444550 [debug] [MainThread]: On debug: No close available on handle
+[0m22:37:14.444550 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:37:14.444550 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:37:14.450374 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No such host is known.\r\n (11001) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11001)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:37:14.454013 [debug] [MainThread]: Command `dbt debug` failed at 22:37:14.454013 after 34.10 seconds
+[0m22:37:14.454013 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:37:14.454013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABB06D3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABA99D5D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ABA99D6010>]}
+[0m22:37:14.462351 [debug] [MainThread]: Flushing usage events
+[0m22:39:43.776504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9FA9FCF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9FA9FE7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9F5D76750>]}
+
+
+============================== 22:39:43.783227 | 30eba1da-0709-4199-aabf-50a3a7e5caa5 ==============================
+[0m22:39:43.783227 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:39:43.783227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:39:43.788621 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:39:43.790257 [info ] [MainThread]: python version: 3.11.5
+[0m22:39:43.790383 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:39:43.791127 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:39:44.320473 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m22:39:44.320473 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m22:39:44.323980 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m22:39:44.324826 [info ] [MainThread]: adapter type: sqlserver
+[0m22:39:44.326436 [info ] [MainThread]: adapter version: 1.7.4
+[0m22:39:44.505805 [info ] [MainThread]: Configuration:
+[0m22:39:44.512816 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:39:44.512816 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:39:44.515832 [info ] [MainThread]: Required dependencies:
+[0m22:39:44.515832 [debug] [MainThread]: Executing "git --help"
+[0m22:39:44.578701 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:39:44.579491 [debug] [MainThread]: STDERR: "b''"
+[0m22:39:44.579491 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:39:44.581728 [info ] [MainThread]: Connection:
+[0m22:39:44.581728 [info ] [MainThread]:   server: poojaserver.database.windows.net
+[0m22:39:44.581728 [info ] [MainThread]:   database: poojadatabase
+[0m22:39:44.581728 [info ] [MainThread]:   schema: case
+[0m22:39:44.581728 [info ] [MainThread]:   UID: poojaadmin
+[0m22:39:44.581728 [info ] [MainThread]:   client_id: None
+[0m22:39:44.581728 [info ] [MainThread]:   authentication: sql
+[0m22:39:44.586715 [info ] [MainThread]:   encrypt: True
+[0m22:39:44.586715 [info ] [MainThread]:   trust_cert: False
+[0m22:39:44.586715 [info ] [MainThread]:   retries: 1
+[0m22:39:44.586715 [info ] [MainThread]:   login_timeout: 0
+[0m22:39:44.586715 [info ] [MainThread]:   query_timeout: 0
+[0m22:39:44.586715 [info ] [MainThread]:   port: 1433
+[0m22:39:44.586715 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:39:44.586715 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m22:39:44.586715 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m22:39:44.586715 [debug] [MainThread]: On debug: select 1 as id
+[0m22:39:44.596018 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:39:44.596018 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver.database.windows.net,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:39:45.146211 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m22:39:45.146211 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m22:39:45.146211 [debug] [MainThread]: On debug: No close available on handle
+[0m22:39:45.146211 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:39:45.146211 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:39:45.151386 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:39:45.153645 [debug] [MainThread]: Command `dbt debug` failed at 22:39:45.153645 after 1.50 seconds
+[0m22:39:45.153645 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:39:45.153645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9FAA5BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9F92D4710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9FB22ED90>]}
+[0m22:39:45.153645 [debug] [MainThread]: Flushing usage events
+[0m22:41:29.707783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B4DC3990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B4DC2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B5131810>]}
+
+
+============================== 22:41:29.707783 | e2d9beb8-7145-4733-abb6-d578016c1440 ==============================
+[0m22:41:29.707783 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:41:29.707783 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'debug': 'True', 'version_check': 'True', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -d', 'send_anonymous_usage_stats': 'True'}
+[0m22:41:30.511356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B50B5D10>]}
+[0m22:41:30.747635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B6CCF450>]}
+[0m22:41:30.749232 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:41:30.795903 [debug] [MainThread]: checksum: 61e99fc04fd80d06ce91efefd25c0802dcce8a048167599a1a188233d6ce8ed9, vars: {}, profile: , target: , version: 1.7.2
+[0m22:41:30.795903 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:41:30.795903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B6E0ED10>]}
+[0m22:41:37.486268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B7201D10>]}
+[0m22:41:37.559989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B749E6D0>]}
+[0m22:41:37.562329 [info ] [MainThread]: Found 2 models, 1 seed, 0 sources, 0 exposures, 0 metrics, 459 macros, 0 groups, 0 semantic models
+[0m22:41:37.564308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2d9beb8-7145-4733-abb6-d578016c1440', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B743A510>]}
+[0m22:41:37.568473 [info ] [MainThread]: 
+[0m22:41:37.568473 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m22:41:37.576277 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_poojadatabase'
+[0m22:41:37.624350 [debug] [ThreadPool]: Using sqlserver connection "list_poojadatabase"
+[0m22:41:37.624350 [debug] [ThreadPool]: On list_poojadatabase: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "demo", "target_name": "dev", "connection_name": "list_poojadatabase"} */
+select  name as [schema]
+    from sys.schemas 
+  
+[0m22:41:37.624350 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:41:37.631348 [debug] [ThreadPool]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver.database.windows.net,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=No;Application Name=dbt-sqlserver/1.7.4
+[0m22:41:38.080150 [debug] [ThreadPool]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "demo", "target_name": "dev", "connection_name": "list_poojadatabase"} */
+select  name as [schema]
+    from sys.schemas 
+  
+[0m22:41:38.085262 [debug] [ThreadPool]: fabric adapter: Rolling back transaction.
+[0m22:41:38.087020 [debug] [ThreadPool]: On list_poojadatabase: No close available on handle
+[0m22:41:38.087020 [debug] [ThreadPool]: fabric adapter: Error running SQL: macro list_schemas
+[0m22:41:38.087020 [debug] [ThreadPool]: fabric adapter: Rolling back transaction.
+[0m22:41:38.096686 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:41:38.096686 [debug] [MainThread]: Connection 'list_poojadatabase' was properly closed.
+[0m22:41:38.096686 [info ] [MainThread]: 
+[0m22:41:38.096686 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[0m22:41:38.096686 [error] [MainThread]: Encountered an error:
+Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)")
+[0m22:41:38.102987 [debug] [MainThread]: Command `dbt run` failed at 22:41:38.102987 after 8.48 seconds
+[0m22:41:38.107112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B65BFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B657B2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B6553FD0>]}
+[0m22:41:38.109358 [debug] [MainThread]: Flushing usage events
+[0m22:43:03.438775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B2DCBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271093D9ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027109D0ED50>]}
+
+
+============================== 22:43:03.448278 | 5f7bc4c5-969b-4510-a4df-c37f11479e22 ==============================
+[0m22:43:03.448278 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:43:03.451795 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'debug': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -d', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:43:03.643399 [error] [MainThread]: Encountered an error:
+
+[0m22:43:03.730993 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 165, in wrapper
+    profile = load_profile(flags.PROJECT_DIR, flags.VARS, flags.PROFILE, flags.TARGET, threads)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\runtime.py", line 70, in load_profile
+    profile = Profile.render(
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 436, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 355, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 165, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\factory.py", line 212, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\factory.py", line 58, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\sqlserver\__init__.py", line 3, in <module>
+    from dbt.adapters.sqlserver.sql_server_adapter import SQLServerAdapter
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\sqlserver\sql_server_adapter.py", line 5, in <module>
+    from dbt.adapters.fabric import FabricAdapter
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\fabric\__init__.py", line 3, in <module>
+    from dbt.adapters.fabric.fabric_adapter import FabricAdapter
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\fabric\fabric_adapter.py", line 24, in <module>
+    from dbt.adapters.fabric.fabric_connection_manager import FabricConnectionManager
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py", line 12, in <module>
+    from azure.identity import AzureCliCredential, DefaultAzureCredential, EnvironmentCredential
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\__init__.py", line 10, in <module>
+    from ._credentials import (
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_credentials\__init__.py", line 5, in <module>
+    from .authorization_code import AuthorizationCodeCredential
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_credentials\authorization_code.py", line 9, in <module>
+    from .._internal.aad_client import AadClient
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_internal\__init__.py", line 5, in <module>
+    from .aad_client import AadClient
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_internal\aad_client.py", line 11, in <module>
+    from .aad_client_base import AadClientBase
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_internal\aad_client_base.py", line 20, in <module>
+    from .aadclient_certificate import AadClientCertificate
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\identity\_internal\aadclient_certificate.py", line 7, in <module>
+    from cryptography import x509
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\cryptography\x509\__init__.py", line 7, in <module>
+    from cryptography.x509 import certificate_transparency, verification
+  File "C:\Users\raiak\AppData\Local\Programs\Python\Python311\Lib\site-packages\cryptography\x509\certificate_transparency.py", line 11, in <module>
+    from cryptography.hazmat.bindings._rust import x509 as rust_x509
+  File "<frozen importlib._bootstrap>", line 1165, in _find_and_load
+KeyboardInterrupt
+
+[0m22:43:03.738978 [debug] [MainThread]: Command `dbt run` failed at 22:43:03.730993 after 0.40 seconds
+[0m22:43:03.741210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027109E28210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B329B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B2E6E50>]}
+[0m22:43:03.743088 [debug] [MainThread]: Flushing usage events
+[0m22:43:14.403122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C895B36D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88F82690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88F134D0>]}
+
+
+============================== 22:43:14.409304 | b948cabb-9b49-46e5-a1dd-b54b43843879 ==============================
+[0m22:43:14.409304 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:43:14.409304 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:43:14.409304 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:43:14.409304 [info ] [MainThread]: python version: 3.11.5
+[0m22:43:14.409304 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:43:14.416561 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:43:14.828539 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m22:43:14.830086 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m22:43:14.830086 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m22:43:14.831562 [info ] [MainThread]: adapter type: sqlserver
+[0m22:43:14.831562 [info ] [MainThread]: adapter version: 1.7.4
+[0m22:43:14.972032 [info ] [MainThread]: Configuration:
+[0m22:43:14.974289 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:43:14.975295 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:43:14.975295 [info ] [MainThread]: Required dependencies:
+[0m22:43:14.976619 [debug] [MainThread]: Executing "git --help"
+[0m22:43:15.051249 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:43:15.051249 [debug] [MainThread]: STDERR: "b''"
+[0m22:43:15.051249 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:43:15.051249 [info ] [MainThread]: Connection:
+[0m22:43:15.055213 [info ] [MainThread]:   server: poojaserver.database.windows.net
+[0m22:43:15.055213 [info ] [MainThread]:   database: poojadatabase
+[0m22:43:15.057956 [info ] [MainThread]:   schema: case
+[0m22:43:15.058670 [info ] [MainThread]:   UID: None
+[0m22:43:15.058670 [info ] [MainThread]:   client_id: None
+[0m22:43:15.058670 [info ] [MainThread]:   authentication: Windows Login
+[0m22:43:15.058670 [info ] [MainThread]:   encrypt: True
+[0m22:43:15.058670 [info ] [MainThread]:   trust_cert: True
+[0m22:43:15.058670 [info ] [MainThread]:   retries: 1
+[0m22:43:15.058670 [info ] [MainThread]:   login_timeout: 0
+[0m22:43:15.058670 [info ] [MainThread]:   query_timeout: 0
+[0m22:43:15.058670 [info ] [MainThread]:   port: 1433
+[0m22:43:15.058670 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:43:15.065761 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m22:43:15.066720 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m22:43:15.066720 [debug] [MainThread]: On debug: select 1 as id
+[0m22:43:15.066720 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:43:15.066720 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=poojaserver.database.windows.net;Database=poojadatabase;trusted_connection=Yes;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.7.4;ConnectRetryCount=1
+[0m22:43:15.478315 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m22:43:15.478315 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m22:43:15.478315 [debug] [MainThread]: On debug: No close available on handle
+[0m22:43:15.478315 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:43:15.478315 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:43:15.478315 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('HY000', '[HY000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Windows logins are not supported in this version of SQL Server. (40607) (SQLDriverConnect); [HY000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Windows logins are not supported in this version of SQL Server. (40607)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:43:15.484377 [debug] [MainThread]: Command `dbt debug` failed at 22:43:15.478315 after 1.20 seconds
+[0m22:43:15.484950 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:43:15.484950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C891BF010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C891F3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C8928CED0>]}
+[0m22:43:15.484950 [debug] [MainThread]: Flushing usage events
+[0m22:53:50.986194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5304A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF4FB6C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5304DD0>]}
+
+
+============================== 22:53:50.994157 | 4f1ad764-abf3-42a9-a2fb-9928559745b7 ==============================
+[0m22:53:50.994157 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:53:50.998888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:53:50.998888 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:53:50.998888 [info ] [MainThread]: python version: 3.11.5
+[0m22:53:50.998888 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:53:51.003816 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:53:51.003816 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 13
+  ------------------------------
+  10 |       schema: dbo
+  11 |       windows_login: False
+  12 |       trust_cert: True
+  13 |      user: poojaadmin
+  14 |      password: $Pooja@123
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 4, column 5
+  did not find expected key
+    in "<unicode string>", line 13, column 6
+[0m22:53:51.006245 [debug] [MainThread]: Command `dbt debug` failed at 22:53:51.006245 after 0.05 seconds
+[0m22:53:51.008167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF4F9E9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5062A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5062D90>]}
+[0m22:53:51.009692 [debug] [MainThread]: Flushing usage events
+[0m22:54:48.203226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A46AFB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A48DEA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A4912D50>]}
+
+
+============================== 22:54:48.210901 | fc506b89-572c-44bf-b6f1-5656f9a4fc9c ==============================
+[0m22:54:48.210901 [info ] [MainThread]: Running with dbt=1.7.2
+[0m22:54:48.213034 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\raiak\\demo', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\raiak\\demo\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:54:48.213034 [info ] [MainThread]: dbt version: 1.7.2
+[0m22:54:48.214961 [info ] [MainThread]: python version: 3.11.5
+[0m22:54:48.216131 [info ] [MainThread]: python path: C:\Users\raiak\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:54:48.216131 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:54:48.815922 [info ] [MainThread]: Using profiles dir at C:\Users\raiak\demo
+[0m22:54:48.815922 [info ] [MainThread]: Using profiles.yml file at C:\Users\raiak\demo\profiles.yml
+[0m22:54:48.818219 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raiak\demo\dbt_project.yml
+[0m22:54:48.818219 [info ] [MainThread]: adapter type: sqlserver
+[0m22:54:48.821162 [info ] [MainThread]: adapter version: 1.7.4
+[0m22:54:48.982338 [info ] [MainThread]: Configuration:
+[0m22:54:48.985834 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:54:48.985834 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:54:48.985834 [info ] [MainThread]: Required dependencies:
+[0m22:54:48.985834 [debug] [MainThread]: Executing "git --help"
+[0m22:54:49.055258 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:54:49.056268 [debug] [MainThread]: STDERR: "b''"
+[0m22:54:49.056268 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:54:49.058321 [info ] [MainThread]: Connection:
+[0m22:54:49.059274 [info ] [MainThread]:   server: poojaserver.database.windows.net
+[0m22:54:49.060893 [info ] [MainThread]:   database: poojadatabase
+[0m22:54:49.070424 [info ] [MainThread]:   schema: dbo
+[0m22:54:49.072043 [info ] [MainThread]:   UID: poojaadmin
+[0m22:54:49.075647 [info ] [MainThread]:   client_id: None
+[0m22:54:49.076555 [info ] [MainThread]:   authentication: sql
+[0m22:54:49.077356 [info ] [MainThread]:   encrypt: True
+[0m22:54:49.078639 [info ] [MainThread]:   trust_cert: True
+[0m22:54:49.078639 [info ] [MainThread]:   retries: 1
+[0m22:54:49.078639 [info ] [MainThread]:   login_timeout: 0
+[0m22:54:49.080531 [info ] [MainThread]:   query_timeout: 0
+[0m22:54:49.081538 [info ] [MainThread]:   port: 1433
+[0m22:54:49.081538 [info ] [MainThread]: Registered adapter: sqlserver=1.7.4
+[0m22:54:49.083486 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m22:54:49.083486 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m22:54:49.083486 [debug] [MainThread]: On debug: select 1 as id
+[0m22:54:49.083486 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:54:49.083486 [debug] [MainThread]: SQLServer adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=poojaserver.database.windows.net,1433;Database=poojadatabase;UID={poojaadmin};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;Application Name=dbt-sqlserver/1.7.4
+[0m22:54:49.515699 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m22:54:49.515699 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m22:54:49.515699 [debug] [MainThread]: On debug: No close available on handle
+[0m22:54:49.522213 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:54:49.525153 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:54:49.525153 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user 'poojaadmin'. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:54:49.528464 [debug] [MainThread]: Command `dbt debug` failed at 22:54:49.528464 after 1.46 seconds
+[0m22:54:49.529889 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:54:49.530744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002009DCBFB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002009DCBFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A49450D0>]}
+[0m22:54:49.531257 [debug] [MainThread]: Flushing usage events
