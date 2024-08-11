@@ -12,7 +12,8 @@ CREATE OR REPLACE TABLE `cohesive-geode-432116-a5.amazon.Sales_Fact_D2` (
     Amount FLOAT64,
     Location String,
     Promotion String,
-    OrderType Bool,
+    OrderType Bool
+    ASIN String,
 ) As
 
 select 
@@ -30,6 +31,7 @@ DISTINCT
     `Amount`,
     `ship-postal-code`,
     'promotion-ids',
-    `B2B`
+    `B2B`,
+    ASIN,
 from 
  `cohesive-geode-432116-a5.amazon.amazon_sales_report_D1_model`
